@@ -681,10 +681,9 @@ export const getMapsByPk = (pk) => {
         .then(({ data }) => data?.maps);
 };
 
-export const getFeaturedResources = (page = 1, page_size =  4) => {
+export const getFeaturedResources = (page = 1) => {
     return axios.get(parseDevHostname(endpoints[RESOURCES]), {
         params: {
-            page_size,
             page,
             'filter{featured}': true,
             api_preset: API_PRESET.CATALOGS
