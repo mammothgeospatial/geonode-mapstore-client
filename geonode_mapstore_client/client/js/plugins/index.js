@@ -226,10 +226,10 @@ export const plugins = {
         'Expander',
         () => import(/* webpackChunkName: 'plugins/expander-plugin' */ '@mapstore/framework/plugins/Expander')
     ),
-    ScaleBoxPlugin: toModulePlugin(
-        'ScaleBox',
-        () => import(/* webpackChunkName: 'plugins/scale-box-plugin' */ '@mapstore/framework/plugins/ScaleBox')
-    ),
+    // ScaleBoxPlugin: toModulePlugin(
+    //     'ScaleBox',
+    //     () => import(/* webpackChunkName: 'plugins/scale-box-plugin' */ '@mapstore/framework/plugins/ScaleBox')
+    // ),
     MapFooterPlugin: toModulePlugin(
         'MapFooter',
         () => import(/* webpackChunkName: 'plugins/map-footer-plugin' */ '@mapstore/framework/plugins/MapFooter')
